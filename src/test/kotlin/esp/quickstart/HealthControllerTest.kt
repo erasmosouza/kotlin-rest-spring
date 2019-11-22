@@ -25,6 +25,6 @@ class HealthControllerTest {
         var health: Health? =
             restTemplate?.getForObject("http://localhost:$port/check?name=Kotlin", Health::class.java, 200)
 
-        Assert.assertEquals("Hello, Kotlin", health?.content)
+        Assert.assertEquals("Hello, Erasmo", health?.content)
     }
 }
